@@ -34,7 +34,7 @@ class GamesTest < ApplicationSystemTestCase
 
   test 'Submit a correct word and get a Congrats' do
     visit new_url
-    assert test: "Check correct word"
+    assert test: 'Check correct word'
     letters = ''
     page.all('.letter').each do |l|
       letters += l.text
