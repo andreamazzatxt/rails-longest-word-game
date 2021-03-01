@@ -25,7 +25,7 @@ class GamesTest < ApplicationSystemTestCase
 
   test 'Submit a word with one letter' do
     visit new_url
-    assert test: "Check single letter word"
+    assert test: 'Check single letter word'
     letter = page.all('.letter').sample.text
     page.fill_in('word', with: letter)
     click_button('Score')
